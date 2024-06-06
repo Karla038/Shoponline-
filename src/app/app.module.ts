@@ -9,6 +9,7 @@ import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { RegisterComponent } from './componentes/register/register.component';
 import { ProductoListaComponent } from './componentes/producto-lista/producto-lista.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ProductoListaComponent } from './componentes/producto-lista/producto-li
     BrowserModule,
     AppRoutingModule,
     PrimengModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule
   ],
   providers: [

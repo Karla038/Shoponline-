@@ -6,6 +6,8 @@ import { MenubarModule } from 'primeng/menubar';
 import { ToolbarModule } from 'primeng/toolbar';
 import { TooltipModule } from 'primeng/tooltip';
 import { MenuModule } from 'primeng/menu';
+import { CardModule } from 'primeng/card';
+import { InputTextModule } from 'primeng/inputtext';
 
 
 //Modulo primeng
@@ -15,7 +17,9 @@ const modPrime: any = [
   MenubarModule,
   ToolbarModule,
   TooltipModule,
-  MenuModule
+  MenuModule,
+  CardModule,
+  InputTextModule
 ];
 
 @NgModule({

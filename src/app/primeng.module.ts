@@ -1,16 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AvatarModule } from 'primeng/avatar';
-import { ButtonModule } from 'primeng/button';
-import { MenubarModule } from 'primeng/menubar';
 import { ToolbarModule } from 'primeng/toolbar';
+import { MenubarModule } from 'primeng/menubar';
+import { ButtonModule } from 'primeng/button';
+import { AvatarModule } from 'primeng/avatar';
 import { TooltipModule } from 'primeng/tooltip';
 import { MenuModule } from 'primeng/menu';
 import { CardModule } from 'primeng/card';
-import { InputTextModule } from 'primeng/inputtext';
+import { InputTextModule} from 'primeng/inputtext';
+import { ToastModule} from 'primeng/toast';
+import { InputTextareaModule} from 'primeng/inputtextarea';
+import { ConfirmPopupModule } from 'primeng/confirmpopup';
+import { DialogModule } from 'primeng/dialog';
+import { ImageModule } from 'primeng/image';
+import { FileUploadModule } from 'primeng/fileupload';
+import { TableModule } from 'primeng/table';
 
-
-//Modulo primeng
 const modPrime: any = [
   AvatarModule,
   ButtonModule,
@@ -19,7 +24,15 @@ const modPrime: any = [
   TooltipModule,
   MenuModule,
   CardModule,
-  InputTextModule
+  InputTextareaModule,
+  ButtonModule,
+  ToastModule,
+  InputTextModule,
+ConfirmPopupModule,
+DialogModule,
+ImageModule,
+FileUploadModule,
+TableModule
 ];
 
 @NgModule({

@@ -15,6 +15,9 @@ import { DialogModule } from 'primeng/dialog';
 import { ImageModule } from 'primeng/image';
 import { FileUploadModule } from 'primeng/fileupload';
 import { TableModule } from 'primeng/table';
+import { ConfirmDialogModule } from 'primeng/confirmdialog';
+import { DropdownModule } from 'primeng/dropdown';
+import { ConfirmationService } from 'primeng/api';
 
 const modPrime: any = [
   AvatarModule,
@@ -28,11 +31,13 @@ const modPrime: any = [
   ButtonModule,
   ToastModule,
   InputTextModule,
-ConfirmPopupModule,
-DialogModule,
-ImageModule,
-FileUploadModule,
-TableModule
+  ConfirmPopupModule,
+  DialogModule,
+  ImageModule,
+  FileUploadModule,
+  TableModule,
+  ConfirmDialogModule,
+  DropdownModule
 ];
 
 @NgModule({

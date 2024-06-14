@@ -1,6 +1,6 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PrimengModule } from './primeng.module';
@@ -9,11 +9,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './componentes/login/login.component';
 import { RegisterComponent } from './componentes/register/register.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
 import { AuthService } from './services/auth.service';
-import { MessageService } from 'primeng/api';
-import { HomeComponent } from './componentes/home/home.component';
-import { ProductosComponent } from "./componentes/productos/productos.component";
+import { MessageService, ConfirmationService  } from 'primeng/api';
+import { HomeComponent } from '../app/componentes/home/home.component';
+import { ProductosComponent } from './componentes/productos/productos.component';
 
 @NgModule({
     declarations: [
@@ -22,11 +22,13 @@ import { ProductosComponent } from "./componentes/productos/productos.component"
         LoginComponent,
         RegisterComponent,
         HomeComponent,
+        ProductosComponent
     ],
     providers: [
         provideClientHydration(),
         AuthService,
-        MessageService
+        MessageService,
+        ConfirmationService
     ],
     bootstrap: [AppComponent],
     imports: [
@@ -36,7 +38,8 @@ import { ProductosComponent } from "./componentes/productos/productos.component"
         PrimengModule,
         ReactiveFormsModule,
         HttpClientModule,
-        ProductosComponent
+        FormsModule
+
     ]
 })
 export class AppModule { }
